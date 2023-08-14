@@ -1,0 +1,193 @@
+html{
+    font-size: 15.6px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: .05rem;
+    line-height: 1.3;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #edf2f8;
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin: 0;
+}
+
+#main-content{
+    display: flex;
+
+    width: 816px;
+    height: auto;
+}
+
+#left-side{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+#left-top{
+    display: flex;
+    flex-basis: 50%;
+}
+
+#card1{
+    flex-basis: 67%;
+    background-color: #733fc8;
+
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: right 20% top 0%;
+}
+#card2{
+    flex-basis: 33%;
+    background-color: #49556b;
+}
+
+#left-bottom{
+    display: flex;
+    flex-basis: 50%;
+}
+#card3{
+    flex-basis: 33%;
+    background-color: #ffffff;
+}
+#card4{
+    flex-basis: 67%;
+    background-color: #18202d;
+}
+
+#right-side{
+    display: flex;
+    flex-basis: 25%;
+}
+
+#card5{
+    flex-basis: 100%;
+    background-color: #ffffff;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em;
+
+    margin: 9px;
+    padding: 17px;
+    border-radius: 5px;
+}
+
+.light-card{
+    color: #141414;
+
+    -webkit-box-shadow: 7px 10px 19px 0px rgba(34, 60, 80, 0.12);
+    -moz-box-shadow: 7px 10px 19px 0px rgba(34, 60, 80, 0.12);
+    box-shadow: 7px 10px 19px 0px rgba(34, 60, 80, 0.12);
+}
+
+.dark-card{
+    color:#ffffff;
+}
+
+.card-heading{
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 10px;
+}
+
+.card-heading img{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+}
+
+.purple-outline{
+    border: #9873c5 solid 2px;
+}
+
+.person-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.person-name{
+    font-size: 1.3em;
+    opacity: 0.9;
+}
+
+.person-info{
+    font-size: 1.2em;
+    opacity: 0.5;
+}
+
+.bold-review{
+    font-size: 1.7em;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.main-review{
+    opacity: 0.7;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+@media (max-height: 500px){
+    body{
+        align-items: start;
+    }
+}
+
+@media (max-width: 900px){
+    #main-content{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        align-items: start;
+    }
+
+    #main-content{
+        flex-direction: column;
+        width: 90%;
+        padding: 9px;
+    }
+
+    #left-top{
+        flex-direction: column;
+    }
+
+    #left-bottom{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px){
+    #main-content{
+        width: 100%;
+    }
+}
+
+
